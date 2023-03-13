@@ -1,0 +1,38 @@
+/* start display */
+.d-flex{
+    display: flex;
+}
+.align-c{
+    align-items: center;
+}
+.fd-row{
+    flex-direction: row;
+}
+.p-relative{
+    position: relative;
+}
+/* end display */
+/* start colors */
+.bg-white{
+    background-color: white;
+}
+.bg-gray{
+    background-color: #f6f6f6;
+}
+/* end colors */
+/* start padding + margine */
+.p-20{
+    padding: 20px;
+}
+.m-20{
+    margin: 20px;
+}
+/* end padding + margine */
+/* start text */
+.txt-c{
+    text-align: center;
+}
+.fw-n{
+    font-weight: normal;
+}
+/* start text */
