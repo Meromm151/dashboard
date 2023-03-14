@@ -2,6 +2,12 @@
 .d-flex{
     display: flex;
 }
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
 .align-c{
     align-items: center;
 }
@@ -20,14 +26,17 @@
     background-color: #f6f6f6;
 }
 /* end colors */
-/* start padding + margine */
+/* start padding + margine + boarder */
 .p-20{
     padding: 20px;
 }
 .m-20{
     margin: 20px;
 }
-/* end padding + margine */
+.rad-10{
+    border-radius: 10px;
+}
+/* end padding + margine + boarder */
 /* start text */
 .txt-c{
     text-align: center;
