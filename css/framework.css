@@ -1,3 +1,11 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+  }
 /* start display */
 .d-flex{
     display: flex;
@@ -5,43 +13,171 @@
 .d-grid{
     display: grid;
 }
+.d-block{
+    display: block;
+}
 .gap-20{
     gap: 20px;
 }
 .align-c{
     align-items: center;
 }
+.just-c{
+    justify-content: center;
+}
+.just-sb{
+    justify-content: space-between;
+}
 .fd-row{
     flex-direction: row;
+}
+.fd-c{
+    flex-direction: column;
 }
 .p-relative{
     position: relative;
 }
+.p-absolute{
+    position: absolute;
+}
 /* end display */
 /* start colors */
+.c-white{
+    color: white;
+}
+.c-gray{
+    color: var(--grey-color);
+}
 .bg-white{
     background-color: white;
 }
 .bg-gray{
-    background-color: #f6f6f6;
+    background-color: var(--grey-color);
+}
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.bg-alt-blue{
+    background-color: var(--blue-alt-color);
+}
+.bg-eee{
+    background-color: #EEE;
 }
 /* end colors */
 /* start padding + margine + boarder */
+/* padding */
+.p-10{
+    padding: 10px;
+}
 .p-20{
     padding: 20px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+/* padding */
+/* margin */
+.m-0{
+    margin: 0;
+}
+.m-10{
+    margin: 10px;
 }
 .m-20{
     margin: 20px;
 }
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+/* margin */
+/* boarder */
+.border-2-w{
+    border: 2px solid white;
+}
+.border-3-w{
+    border: 3px solid white;
+}
+.rad-6{
+    border-radius: 6px;
+}
 .rad-10{
     border-radius: 10px;
 }
+.rad-50{
+    border-radius: 50%;
+}
+/* width */
+.w-fit{
+    width: fit-content;
+}
+/* width */
+/* boarder */
 /* end padding + margine + boarder */
 /* start text */
 .txt-c{
     text-align: center;
 }
+.fs-14{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
 .fw-n{
     font-weight: normal;
+}
+.fw-b{
+    font-weight: bold;
 }
 /* start text */

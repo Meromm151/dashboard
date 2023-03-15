@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="page d-flex">
@@ -19,9 +19,9 @@
         <div class="side-bar bg-white p-20 ">
             <h3 class="p-relative txt-c">Musami</h3>
             <ul class="fw-n">
-                <li class="bg-gray">
-                    <a href="index.html">
-                        <i class="fa-solid fa-chart-simple"></i>
+                <li class="">
+                    <a class="active" href="index.html">
+                        <i class="fa-solid fa-chart-simple "></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
@@ -89,26 +89,36 @@
             </h1>
             <!-- end heading -->
             <div class="wrapper d-grid gap-20">
-                <div class="welcome bg-white rad-10 txt-c">
-                    <h2>welcome</h2>
-                </div>
                 <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
-                </div>
-                <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
-                </div>
-                <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
-                </div>
-                <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
-                </div>
-                <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
-                </div>
-                <div class="welcome bg-white rad-10">
-                    <h2>welcome</h2>
+                    <div class="intro p-20 bg-eee d-flex just-sb">
+                        <div class="">
+                            <div class="d-block m-0">
+                                <h2 class="m-0">Welcome</h2>
+                                <p class="c-gray fs-14 mt-5">
+                                    Musami
+                                </p>
+                            </div>
+                        </div>
+                        <img src="/dashboard/images/welcome.png" alt="">
+                    </div>
+                    <div class="avatar">
+                        <img class="rad-50 ml-20 border-2-w"src="/dashboard/images/user.jpg" alt="">
+                    </div>
+                    <div class="body d-flex just-sb mt-20 mb-20 p-20">
+                        <div class="d-flex txt-c d-block">
+                            Musami
+                            <span class="c-gray mt-10 fs-14 fw-n d-block">Developer</span>
+                        </div>
+                        <div class="d-flex txt-c d-block">
+                            80
+                            <span class="c-gray mt-10 fs-14 fw-n d-block">Projects</span>
+                        </div>
+                        <div class="d-flex txt-c d-block">
+                            $8500
+                            <span class="c-gray mt-10 fs-14 fw-n d-block">Earned</span>
+                        </div>
+                    </div>
+                    <a href="profile.html" class="fs-14 c-white bg-blue pl-10 pr-10 d-block w-fit mr-20 rad-6">Profile</a>
                 </div>
             </div>
         </div>
