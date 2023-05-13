@@ -401,6 +401,51 @@ font-size: 12px;
     opacity: 0.2;
 }
 /* end project */
+/* start reminder */
+.reminder ul li > span{
+    width: 16px;
+    height: 16px;
+    position: relative;
+
+}
+.reminder ul li > span::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    bottom: 50%;
+    transform: translateY(50%);
+    left:30px;
+}
+.reminder ul li .bg-blue::after{
+    background-color: var(--blue-color);
+}
+.reminder ul li .bg-green::after{
+    background-color: var(--green-color);
+}
+.reminder ul li .bg-orange::after{
+    background-color: var(--orange-color);
+}
+.reminder ul li .bg-red::after{
+    background-color: var(--red-color);
+}
+/* end reminder */
+/* start latest post */
+.latest-post img{
+    width: 50px;
+
+}
+.latest-post .info{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.latest-post .body p{
+    border-top: 1px solid #eee ;
+    border-bottom:1px solid #eee ;
+    line-height: 1.8;
+    min-height: 140px;
+}
+/* end latest post */
 /* end content */
 /* start animation */
 @keyframes change-color {
