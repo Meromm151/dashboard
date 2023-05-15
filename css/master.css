@@ -537,6 +537,212 @@ font-size: 12px;
 }
 /* end project */
 /* end content */
+/* ******************************************************************************************************************************************************************** */
+/* start settings page */
+.settings-page{
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+}
+@media (max-width:767px) {
+    .settings-page{
+        grid-template-columns: minmax(100px , 1fr);
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* start site control */
+.settings-page .site-control{
+    height: 380px;
+}
+.settings-page .site-control textarea{
+    resize: none;
+    border: 1px solid #CCC;
+    height: 150px;
+}
+/* end site control */
+/* start general info */
+.general-info .mail-input{
+    display: inline-flex;
+    width: calc(100% - 70px);
+    cursor:not-allowed;
+}
+/* end general info */
+/* start security info */
+.security-info > div:not(:last-child){
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #CCC ;
+}
+.security-info > div a{
+    transition: 0.3s;
+}
+.security-info > div a:hover{
+    background-color: var(--blue-alt-color);
+}
+/* end security info */
+/* start social info */
+.social-info .social-box i{
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #DDD;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+.social-info .social-box input{
+    height: 40px;
+    border: 1px solid #DDD;
+    border-radius: 0 6px 6px 0;
+    font-size: 13px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+.social-info > .social-box:focus-within i{
+    color: black;
+}
+/* end social info */
+/* start wedgit controle */
+.widgets-control ul li input{
+    display: none;
+}
+.widgets-control ul li label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.widgets-control ul li label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--gray-color);
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.widgets-control ul li label:hover::before{
+    border-color:var(--blue-color) ;
+}
+.widgets-control ul label::after{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+    background-color: var(--blue-color);
+    transition: 0.3s;
+    transform: scale(0);
+}
+.widgets-control ul li input[type="checkbox"]:checked + label::after{
+    transform: scale(1) rotate(360deg);
+}
+.widgets-control ul li{
+    padding: 10px;
+}
+/* end wedgit controle */
+/* start backup manager */
+.backup-manager .options{
+    border-bottom: 1px solid #eee ;
+}
+.backup-manager .options div{
+    margin-bottom: 18px;
+}
+.backup-manager .options input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.backup-manager .options label{
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.backup-manager .options label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--gray-color);
+}
+.backup-manager .options :hover::before{
+    border-color: var(--blue-color);
+}
+.backup-manager .options label::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    position: absolute;
+    left: 3px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transform: scale(0);
+    transition: 0.3s;
+}
+.backup-manager .options input[type="radio"]:checked + label::after{
+    transform: scale(1);
+}
+.backup-manager .options input[type="radio"]:checked + label::before{
+    border-color: var(--blue-color) ;
+}
+.backup-manager .speed-options{
+    gap: 4px;
+}
+.backup-manager .speed-options input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.backup-manager .speed-options div{
+    border: 2px solid #EEE;
+    width: 100%;
+    transition: 0.3s;
+}
+.backup-manager .speed-options div label{
+    cursor: pointer;
+}
+.backup-manager .speed-options input[type="radio"]:checked + div{
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+/* end backup manager */
+/* end settings page */
+/* start profile */
+.over-view .avatar {
+    flex-direction: column;
+    width: 300px;
+    border-right: 1px solid #EEE ;
+}
+.over-view .avatar img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.over-view .info-box{
+    flex: 1;
+}
+.over-view .avatar .rating i{
+color: #f59e0b ;
+}
+/* end profile */
 /* start animation */
 @keyframes change-color {
     from{

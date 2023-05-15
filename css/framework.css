@@ -59,6 +59,9 @@
 .m-10{
     margin: 10px;
 }
+.m-15{
+    margin: 15px;
+}
 .m-20{
     margin: 20px;
 }
@@ -121,6 +124,9 @@
 /* start boarder */
 .b-none{
     border: none;
+}
+.b-ccc{
+    border: 1px solid #ccc;
 }
 .rad-6{
     border-radius: 6px;
