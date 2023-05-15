@@ -723,6 +723,12 @@ font-size: 12px;
     color: var(--blue-color);
     border-color: var(--blue-color);
 }
+@media (max-width:767px) {
+    .speed-options{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
 /* end backup manager */
 /* end settings page */
 /* start profile */
