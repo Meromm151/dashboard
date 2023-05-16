@@ -846,6 +846,11 @@ color: #f59e0b ;
     width: 550px;
 }
 @media (max-width:767px) {
+    
+    .profile-page {
+        margin: 10px;
+        gap: 10px;
+    }
     .profile-page .other-data{
         display: grid;
         grid-template-columns: minmax(200px , 1fr);
@@ -889,6 +894,28 @@ color: #f59e0b ;
 }
 .profile-page .latest-activities .activity-r .info .time{
     text-align: right;
+}
+@media (max-width:767px) {
+    .profile-page .latest-activities .activity-r .info{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .profile-page .latest-activities .activity-r .info span{
+        font-size: 14px;
+    }
+    .profile-page .latest-activities .time{
+        display: inline;
+    }
+    .profile-page .latest-activities .activity-r .info p{
+        font-size: 15px;
+    }
+    .profile-page .latest-activities .activity-r{
+        flex-direction: column;
+    }
+    .profile-page .other-data .skills-rows
+    , .activities-rows{
+        text-align: center;
+    }
 }
 /* end latest activities */
 /* end profile */
