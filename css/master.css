@@ -902,9 +902,10 @@ color: #f59e0b ;
     .profile-page .latest-activities .activity-r .info{
         flex-direction: column;
         margin-top: 15px;
+        margin-left: 0;
     }
     .profile-page .latest-activities .activity-r .info span{
-        font-size: 14px;
+        font-size: 16px;
     }
     .profile-page .latest-activities .time .clock{
         text-align: center;
@@ -914,6 +915,7 @@ color: #f59e0b ;
         font-size: 15px;
     }
     .profile-page .latest-activities .activity-r{
+        text-align: center;
         flex-direction: column;
     }
     .profile-page .other-data .skills-rows
