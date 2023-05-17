@@ -925,6 +925,90 @@ color: #f59e0b ;
 }
 /* end latest activities */
 /* end profile */
+/* start projects */
+.projects{
+    grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+}
+.projects .project-widget{
+    position: relative;
+}
+.projects .project-widget > p{
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.projects .project-widget img{
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.projects .project-widget img:hover{
+    position: relative;
+    z-index: 5;
+}
+.projects .project-widget img:not(:first-child){
+    margin-left: -20px;
+}
+.projects .project-widget .skills{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #EEE;
+}
+.projects .project-widget .earning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+.projects .project-widget .earning .chart{
+    height: 8px;
+    background-color: #CCC;
+    width: 50%;
+    border-radius: 5px;
+}
+.projects .project-widget .earning .chart span{
+    position: relative;
+    display: block;
+    z-index: 3;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--red-color);
+}
+.projects .project-widget .earning p {
+    display: inline;
+}
+.projects .project-widget .earning p::before{
+    content: "$";
+}
+@media (max-width:767px) {
+    .projects{
+        grid-template-columns: minmax(200px , 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+    .projects .project-widget .skills{
+        flex-direction: column;
+    }
+    .projects .project-widget .skills div{
+        margin-top: 10px;
+    }
+    .projects .project-widget .earning {
+        flex-direction: column;
+    }
+    .projects .project-widget .earning .chart{
+        margin-bottom: 15px;
+    }
+}
+/* end projects */
 /* start animation */
 @keyframes change-color {
     from{
