@@ -1009,6 +1009,55 @@ color: #f59e0b ;
     }
 }
 /* end projects */
+/* start courses */
+.courses-page {
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+}
+.courses-page .course-widget{
+    overflow: hidden;
+}
+.courses-page .course-widget .header{
+    position: relative;
+}
+.courses-page .course-widget .header .course-img{
+    width: 100%;
+}
+.courses-page .course-widget .header .instructor-img{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.courses-page .course-widget .body{
+    border-bottom: 1px solid #EEE ;
+}
+.courses-page .course-widget .body p {
+    line-height: 1.5;
+}
+.courses-page .course-widget .course-info {
+    position: relative;
+}
+.courses-page .course-widget .course-info .info-label{
+    position: absolute;
+    display: inline;
+    left: 50%;
+    top: 0;
+    transform: translate(-50% , -50%);
+}
+.courses-page .course-widget .course-info .info-icon span::before{
+    content: "$";
+}
+@media (max-width:767px) {
+    .courses-page{
+        grid-template-columns: minmax(200px , 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+}
+/* end courses */
 /* start animation */
 @keyframes change-color {
     from{
