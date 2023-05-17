@@ -896,6 +896,9 @@ color: #f59e0b ;
     text-align: right;
 }
 @media (max-width:767px) {
+    .profile-page {
+        grid-template-columns: minmax(200px , 1fr);
+    }
     .profile-page .latest-activities .activity-r .info{
         flex-direction: column;
         margin-top: 15px;
