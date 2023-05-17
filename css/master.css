@@ -906,8 +906,9 @@ color: #f59e0b ;
     .profile-page .latest-activities .activity-r .info span{
         font-size: 14px;
     }
-    .profile-page .latest-activities .time{
-        display: inline;
+    .profile-page .latest-activities .time .clock{
+        text-align: center;
+        margin-top: 10px;
     }
     .profile-page .latest-activities .activity-r .info p{
         font-size: 15px;
