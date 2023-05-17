@@ -1058,6 +1058,46 @@ color: #f59e0b ;
     }
 }
 /* end courses */
+/* start friends */
+.friends-page {
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+}
+.friends-page img{
+    width: 100px;
+    border-radius: 50%;
+}
+.friends-page .friend-widget {
+    position: relative;
+}
+.friends-page .friend-widget .avatar{
+
+    margin-top: 20px;
+}
+.friends-page .friend-widget .contact-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.friends-page .friend-widget .contact-icon i{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 50%;
+    color: #666666;
+    background-color: #EEE;
+    transition: 0.3s;
+}
+.friends-page .friend-widget .contact-icon i:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-page .friend-widget .avatar{
+    flex-direction: column;
+}
+/* end friends */
 /* start animation */
 @keyframes change-color {
     from{
