@@ -1097,6 +1097,43 @@ color: #f59e0b ;
 .friends-page .friend-widget .avatar{
     flex-direction: column;
 }
+.friends-page .friend-widget .friend-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+.friends-page .friend-widget .friend-info div > div{
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.friends-page .friend-widget .friend-info  div i{
+    width: 15px;
+    margin-right: 10px;
+}
+.friends-page .friend-widget .friend-info  .vip{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--orange-color);
+    opacity: 0.2;
+}
+.friends-page .friend-widget .f-profile{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+.friends-page .friend-widget .f-profile .btn-shape{
+    margin-left: 5px;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .friends-page{
+        grid-template-columns: minmax(200px , 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+}
 /* end friends */
 /* start animation */
 @keyframes change-color {
