@@ -1135,6 +1135,107 @@ color: #f59e0b ;
     }
 }
 /* end friends */
+/* start files */
+.files-page {
+    flex-direction: row-reverse;
+}
+.files-page .file-stats{
+    width: 250px;
+    height: fit-content;
+}
+.files-page .file-stats .file-tags .files{
+    border: 1px solid #EEE;
+    border-radius: 6px;
+    margin-bottom:15px ;
+    align-items: center;
+}
+.files-page .file-stats .file-tags .files i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.files-page .file-stats .file-tags .files .blue{
+    background-color:#0075ff33;
+    color: var(--blue-color);
+}
+.files-page .file-stats .file-tags .files .green{
+    background-color: #22c55e33;
+    color: var(--green-color);
+}
+.files-page .file-stats .file-tags .files .red{
+    background-color: #f4433633;
+    color: var(--red-color);
+}
+.files-page .file-stats .file-tags .files .yellow{
+    background-color:#f59e0b33;
+    color: var(--orange-color);
+}
+.files-page .file-stats .file-tags .files .info{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+.files-page .file-stats .file-tags .files .info + span {
+ margin: 0 0 0 auto;
+}
+.files-page .file-stats .button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+.files-page .file-content {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+}
+.files-page .file-content .file {
+    height: fit-content;
+}
+.files-page .file-content .file .file-head{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.files-page .file-content .file .file-head i{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.files-page .file-content .file .file-head img{
+    width: 64px;
+    height: 64px;
+    margin: 10px 0 20px 0;
+    transition: 0.3s;
+}
+.files-page .file-content .file .file-body div{
+    text-align: center;
+
+}
+.files-page .file-content .file .file-body span{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.files-page .file-content .file .file-bottom{
+    border-top: 1px solid #EEE;
+    padding-top: 10px;
+}
+.files-page .file-content .file:hover img{
+    transform: rotate(10deg);
+}
+@media (max-width:767px) {
+    .files-page{
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+    .files-page .file-stats{
+        width: 100%;
+    }
+}
+/* end files */
 /* start animation */
 @keyframes change-color {
     from{
