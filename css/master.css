@@ -1236,6 +1236,63 @@ color: #f59e0b ;
     }
 }
 /* end files */
+/* start plans */
+.plans-page{
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+}
+.plans-page .plan-widget .top{
+    height: 140px;
+    flex-direction: column;
+    position: relative;
+}
+.plans-page .plan-widget .top p{
+    font-size: 42px;
+    margin: 0;
+    position: relative;
+}
+.plans-page .plan-widget .top p::before {
+    content: "$";
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: -20px;
+}
+.plans-page .plan-widget .top::after{
+    content: "";
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    border: 3px solid white;
+    position: absolute;
+}
+.plans-page .plan-widget .body{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.plans-page .plan-widget ul li{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #EEE ;
+    align-items: center;
+    height: fit-content;
+}
+.plans-page .plan-widget ul li .fa-check{
+    color: var(--green-color);
+}
+.plans-page .plan-widget ul li .fa-x{
+    color: var(--red-color);
+   
+}
+.plans-page .plan-widget ul li i{
+    margin-right: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.plans-page .plan-widget .bottom{
+    padding: 5px;
+}
+
+/* end plans */
 /* start animation */
 @keyframes change-color {
     from{
