@@ -1291,7 +1291,13 @@ color: #f59e0b ;
 .plans-page .plan-widget .bottom{
     padding: 5px;
 }
-
+@media (max-width:767px) {
+    .plans-page{
+        grid-template-columns: minmax(250px , 1fr);
+        gap: 10px;
+        margin: 10px;
+    } 
+}
 /* end plans */
 /* start animation */
 @keyframes change-color {
